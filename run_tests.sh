@@ -2,6 +2,7 @@
 
 docker run --rm \
            -e USERNAME="guptadkg" \
+           --name robot-docker \
            --net=host \
            -v "$PWD/output":/output \
            -v "$PWD/suites":/suites \
@@ -9,4 +10,4 @@ docker run --rm \
            -v "$PWD/reports":/reports \
            --security-opt seccomp:unconfined \
            --shm-size "256M" \
-           guptadkg/robot-docker
+           guptadkg/robot-docker 
