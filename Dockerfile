@@ -26,6 +26,6 @@ RUN wget https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_li
         && mv chromedriver /usr/local/bin \
         && chmod +x /usr/local/bin/chromedriver
 
-CMD ["pwd"]
+CMD ["/scripts/run_suite.sh"]
 
 #CMD ["robot", "/usr/src/project/sample-0-trivial/sample-0-trivial.txt"]
