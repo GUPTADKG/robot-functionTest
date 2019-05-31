@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 docker run --rm \
-           -e USERNAME="Ipatios Asmanidis" \
+           -e USERNAME="guptadkg" \
            --net=host \
            -v "$PWD/output":/output \
            -v "$PWD/suites":/suites \
@@ -9,4 +9,4 @@ docker run --rm \
            -v "$PWD/reports":/reports \
            --security-opt seccomp:unconfined \
            --shm-size "256M" \
-           ypasmk/robot-framework
+           guptadkg/robot-docker
