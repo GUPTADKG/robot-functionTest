@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-docker run --rm \
-           -e USERNAME="guptadkg" \
+docker run -e USERNAME="guptadkg" \
            --name robot-docker \
            --net=host \
            -v "$PWD/output":/output \
